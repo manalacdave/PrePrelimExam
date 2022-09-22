@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@Model.GetViewModel().Weather.
+<form method="Post">
+    <div class="form-group">
+        <label asp-for="GetViewModel().Weather"></label>
+        <select class="form-control">
+            <option value="Dinalupihan">Dinalupihan </option>
+            <option value="Dinalupihan">Olongapo City </option>
+            <option value="Dinalupihan">Angeles City</option>
+            <option value="Dinalupihan">Davao City</option>
+
+        </select>
+    </div>0
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            Featured
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Name of Location</li>
+            <li class="list-group-item">Icon</li>
+            <li class="list-group-item">Main</li>
+            <li class="list-group-item">Description</li>
+            <li class="list-group-item">Main.Temp</li>
+            <li class="list-group-item">Main.Pressure</li>
+            <li class="list-group-item">Main.FeelsLike</li>
+            <li class="list-group-item">Main.Humidity</li>
+
+        </ul>
+    </div>
+
+
+
+</form>
